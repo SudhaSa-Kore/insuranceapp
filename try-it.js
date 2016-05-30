@@ -14,7 +14,7 @@ server.listen(3000,function(){
 });*/
 
 
-app.get('/payPremiumamount',function(req,res){
+/*app.get('/payPremiumamount',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
 	res.end(JSON.stringify({"policyNumber":"9348209","message":"Successfully paid the premium amount","nextPremiumDate":"27/5/2018"}));
 });
@@ -22,4 +22,4 @@ app.get('/payPremiumamount',function(req,res){
 app.get('/getTaxCertificate',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
 	res.end(JSON.stringify({"policyNumber":"9348209","policyName":"Jeevan Anandh","url":"http://www.revenue.ie/images/guide-paye-employees-booklet.jpg"}));
-});
+});*/
