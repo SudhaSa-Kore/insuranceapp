@@ -25,6 +25,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+app.get('/getPremiumDate',function(req,res){
+  res.writeHead(200,{'Content-Type':'application/json'});
+  res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/5/2019","premiumPaymentDate":"27/5/2017"}));
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
