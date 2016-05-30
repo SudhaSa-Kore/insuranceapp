@@ -2,6 +2,7 @@
   "name": "insuranceapp",
   "version": "0.0.0",
   "private": true,
+  "main":"try-it.js",
   "scripts": {
     "start": "node ./bin/www"
   },

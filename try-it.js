@@ -8,13 +8,18 @@ server.listen(3000,function(){
 	console.log('server started on port 3000');
 });
 
-app.get('/getPremiumDate',function(req,res){
+/*app.get('/getPremiumDate',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
+<<<<<<< HEAD
 	res.end(JSON.stringify({"policies":[{"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/5/2019","premiumPaymentDate":"27/5/2017"},{"policyNumber":"1987650","policyStartDate":"12/2/2013","policyType":"half-yearly","policyName":"Jeevan Tarang","premiumAmount":"20,000","policyEndDate":"27/5/2018","premiumPaymentDate":"12/8/2016"},{"policyNumber":"1987650","policyStartDate":"2/7/2007","policyType":"monthly","policyName":"Abhinay","premiumAmount":"20,000","policyEndDate":"2/7/2020","premiumPaymentDate":"2/6/2016"}]}));
 });
+=======
+	res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/5/2019","premiumPaymentDate":"27/5/2017"}));
+});*/
+>>>>>>> db9e5c618b7688bb3df531a633ab27f92541716e
 
 
-app.get('/payPremiumamount',function(req,res){
+/*app.get('/payPremiumamount',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
 	res.end(JSON.stringify({"policyNumber":"9348209","message":"Successfully paid the premium amount","nextPremiumDate":"27/5/2018"}));
 });
