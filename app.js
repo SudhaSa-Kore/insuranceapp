@@ -48,11 +48,11 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 	
 	res.writeHead(200,{'Content-Type':'application/json'});
 	if(req.params.policyId == "9348209")
-	res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/5/2019","premiumPaymentDate":"27/5/2017"}));
+	res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"Yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/7/2019","premiumPaymentDate":"27/5/2017","policyMaturityDate":"27/7/2021"}));
     else if(req.params.policyId == "1987650")
-	res.end(JSON.stringify({"policyNumber":"1987650","policyStartDate":"12/2/2013","policyType":"half-yearly","policyName":"Jeevan Tarang","premiumAmount":"20,000","policyEndDate":"27/5/2018","premiumPaymentDate":"12/8/2016"}));
+	res.end(JSON.stringify({"policyNumber":"1987650","policyStartDate":"12/2/2013","policyType":"Half-yearly","policyName":"Jeevan Tarang","premiumAmount":"20,000","policyEndDate":"27/5/2018","premiumPaymentDate":"12/8/2016","policyMaturityDate":"27/5/2030"}]}));));
     else if(req.params.policyId == "19876589")
-	res.end(JSON.stringify({"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"monthly","policyName":"Abhinay","premiumAmount":"20,000","policyEndDate":"2/7/2020","premiumPaymentDate":"2/6/2016"}));
+	res.end(JSON.stringify({"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"Quarterly","policyName":"Abhinay","premiumAmount":"20,000","policyEndDate":"2/7/2020","policyMaturityDate":"2/7/2024","premiumPaymentDate":"12/6/2016"}));
     
 
 });
