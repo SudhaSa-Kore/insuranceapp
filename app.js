@@ -31,13 +31,13 @@ app.get('/getPremiumDate',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
   /*res.end(JSON.stringify({"policies":[{"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"Quarterly","policyName":"Abhinay","premiumAmount":"20,000","policyEndDate":"2/7/2020","policyMaturityDate":"2/7/2024","premiumPaymentDate":"12/6/2016"},{"policyNumber":"9348209","policyStartDate":"27/5/2016","policyType":"Yearly","policyName":"Jeevan Anandh","premiumAmount":"31,000","policyEndDate":"27/7/2019","premiumPaymentDate":"27/5/2017","policyMaturityDate":"27/7/2021"},{"policyNumber":"1987650","policyStartDate":"12/2/2013","policyType":"Half-yearly","policyName":"Jeevan Tarang","premiumAmount":"20,000","policyEndDate":"27/5/2018","premiumPaymentDate":"12/8/2016","policyMaturityDate":"27/5/2030"}]}));*/
   
-  res.end(JSON.stringify({"policies":[{"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"Quarterly","policyName":"Invest Once","investmentAmount":"20,000","policyEndDate":"2/7/2017","policyMaturityDate":"2/7/2017","premiumPaymentDate":""},{"policyNumber":"9348209","policyStartDate":"7/6/2016","policyType":"Half-yearly","policyName":"eAajeevan Sampatti+","premiumAmount":"31,000","policyEndDate":"27/7/2031","premiumPaymentDate":"7/12/2016","policyMaturityDate":"27/7/2031","paymentTerm":"15Years"},{"policyNumber":"1987650","policyStartDate":"12/8/2013","policyType":"Annual","policyName":"Monthly Income+","premiumAmount":"35,715","policyEndDate":"27/5/2020","premiumPaymentDate":"12/8/2016","policyMaturityDate":"27/5/2028"}]}));
+  res.end(JSON.stringify({"policies":[{"policyNumber":"19876589","policyStartDate":"2/07/2007","policyType":"monthly","policyName":"Invest Once","investmentAmount":"20,000","policyEndDate":"2/07/2017","policyMaturityDate":"2/07/2017","premiumPaymentDate":""},{"policyNumber":"9348209","policyStartDate":"7/06/2016","policyType":"Half-yearly","policyName":"eAajeevan Sampatti+","premiumAmount":"31,000","policyEndDate":"27/07/2031","premiumPaymentDate":"07/12/2016","policyMaturityDate":"27/07/2031","paymentTerm":"15Years"},{"policyNumber":"1987650","policyStartDate":"12/08/2013","policyType":"Annual","policyName":"Monthly Income+","premiumAmount":"35,715","policyEndDate":"27/05/2020","premiumPaymentDate":"12/08/2016","policyMaturityDate":"27/05/2028"}]}));
 });
 
 
 app.get('/payPremiumamount',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
-	res.end(JSON.stringify({"policyNumber":"9348209","message":"Successfully paid the premium amount","nextPremiumDate":"27/5/2018"}));
+	res.end(JSON.stringify({"policyNumber":"9348209","message":"Successfully paid the premium amount","nextPremiumDate":"27/05/2018"}));
 });
 
 app.get('/getTaxCertificate',function(req,res){
@@ -50,11 +50,11 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 	
 	res.writeHead(200,{'Content-Type':'application/json'});
 	if(req.params.policyId == "9348209")
-	res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"7/6/2016","policyType":"Half-yearly","policyName":"eAajeevan Sampatti+","premiumAmount":"31,000","policyEndDate":"27/7/2031","premiumPaymentDate":"7/12/2016","policyMaturityDate":"27/7/2031","paymentTerm":"15Years"}));
+	res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"07/06/2016","policyType":"Half-yearly","policyName":"eAajeevan Sampatti+","premiumAmount":"31,000","policyEndDate":"27/07/2031","premiumPaymentDate":"7/12/2016","policyMaturityDate":"27/7/2031","paymentTerm":"15 years"}));
     else if(req.params.policyId == "1987650")
-	res.end(JSON.stringify({"policyNumber":"1987650","policyStartDate":"12/8/2013","policyType":"Annual","policyName":"Monthly Income+","premiumAmount":"35,715","policyEndDate":"27/5/2020","premiumPaymentDate":"12/8/2016","policyMaturityDate":"27/5/2028"}));
+	res.end(JSON.stringify({"policyNumber":"1987650","policyStartDate":"12/08/2013","policyType":"Annual","policyName":"Monthly Income+","premiumAmount":"35,715","policyEndDate":"27/05/2020","premiumPaymentDate":"12/08/2016","policyMaturityDate":"27/05/2028"}));
     else if(req.params.policyId == "19876589")
-	res.end(JSON.stringify({"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"Quarterly","policyName":"Invest Once","investmentAmount":"20,000","policyEndDate":"2/7/2017","policyMaturityDate":"2/7/2017","premiumPaymentDate":""}));
+	res.end(JSON.stringify({"policyNumber":"19876589","policyStartDate":"2/07/2007","policyType":"monthly","policyName":"Invest Once","investmentAmount":"20,000","policyEndDate":"2/07/2017","policyMaturityDate":"2/07/2017","premiumPaymentDate":""}));
     
 
 });
