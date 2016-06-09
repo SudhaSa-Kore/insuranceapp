@@ -59,6 +59,13 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 
 });
 
+app.get('/testAction',function(req,res){
+	res.writeHead(200,{'Content-Type':'application/json'});
+	res.end(JSON.stringify({"HTMLImageComponent":"<h1>Test Action successful</h1><p>Successfully Done</p>"}));
+
+});
+
+
 /*app.get('bharatiaxa/getPremiumDate',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
 	res.end(JSON.stringify({"policies":[{"policyNumber":"19876589","policyStartDate":"2/7/2007","policyType":"Quarterly","policyName":"Invest Once","investmentAmount":"20,000","policyEndDate":"2/7/2017","policyMaturityDate":"2/7/2017","premiumPaymentDate":""},{"policyNumber":"9348209","policyStartDate":"7/6/2016","policyType":"Half-yearly","policyName":"eAajeevan Sampatti+","premiumAmount":"31,000","policyEndDate":"27/7/2031","premiumPaymentDate":"7/12/2016","policyMaturityDate":"27/7/2031","paymentTerm":"15Years"},{"policyNumber":"1987650","policyStartDate":"12/8/2013","policyType":"Annual","policyName":"Monthly Income+","premiumAmount":"35,715","policyEndDate":"27/5/2020","premiumPaymentDate":"12/8/2016","policyMaturityDate":"27/5/2028"}]}));
