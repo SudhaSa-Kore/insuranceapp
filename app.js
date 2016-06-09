@@ -59,11 +59,7 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 
 });
 
-app.get('/testAction',function(req,res){
-	res.writeHead(200,{'Content-Type':'application/json'});
-	res.end(JSON.stringify({"HTMLImageComponent":"<h1>Test Action successful</h1><p>Successfully Done</p>"}));
 
-});
 
 
 /*app.get('bharatiaxa/getPremiumDate',function(req,res){
