@@ -59,7 +59,7 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 
 });
    
-   app.get('/dpworld',function(req,res){
+   app.post('/dpworld',function(req,res){
 	   res.writeHead(200,{'Content-Type':'application/json'});
 	res.end(JSON.stringify({ results: [{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"}]}));
    });
