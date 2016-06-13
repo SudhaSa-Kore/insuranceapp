@@ -40,7 +40,7 @@ app.get('/payPremiumamount',function(req,res){
 
 app.get('/getTaxCertificate',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
-	res.end(JSON.stringify({"policyNumber":"9348209","policyName":"Jeevan Anandh","url":"http://www.revenue.ie/images/guide-paye-employees-booklet.jpg"}));
+	res.end(JSON.stringify({"policyNumber":"9348209","policyName":"Jeevan Anandh","url":"https://dry-falls-30126.herokuapp.com/static/certificate.png"}));
 
 });
 
