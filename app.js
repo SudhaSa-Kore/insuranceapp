@@ -62,7 +62,7 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
    });
 
    app.get('/creditCards',function(req,res){
-	  res.setHeader('content-Type','PPlication/json');
+	  res.writeHead(200,{'Content-Type':'application/json'});
        res.end(JSON.stringify({
   "CCSuggest": [
     {
