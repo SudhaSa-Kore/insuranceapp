@@ -61,6 +61,76 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
 	res.end(JSON.stringify({ results: [{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"},{"Title":"DP World HO Infrastrcuture Team"},{"Title":"DP World HO Migration Team"}]}));
    });
 
+   app.get('/creditCards',function(req,res){
+	  res.setHeader('content-Type','PPlication/json');
+       res.end(JSON.stringify({
+  "CCSuggest": [
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card-365.png",
+      "keywords": "weekend dining,online,groceries,fuel,rewards,rebate,365,allaround",
+      "name": "OCBC 365 Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/365card.html",
+      "tagLine": "The cashback card for all your daily spend"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/cards_compare/ge-cashflo-compare.png",
+      "keywords": "privileges,rebate,health,wellness,great eastern,insurance,policy,installments,split,cashflo",
+      "name": "OCBC Great Eastern Cashflo MasterCard",
+      "productURL": "http://www.ocbc.com/personal-banking/cards/ge-cashflo-mastercard.html",
+      "tagLine": "The only card for your health and wellness needs"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_platinum.png",
+      "keywords": "earn OCBC$,20% off,children,family,enrichment,recreation,shopping,rewards,platinum",
+      "name": "OCBC Platinum Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/platinum-credit-mastercard.html",
+      "tagLine": "Best card for all your family needs"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_best.png",
+      "keywords": "rewards,discounts,rebates,electronics,computers,appliances,best denki",
+      "name": "OCBC BEST Denki Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/best-platinum-mastercard.html",
+      "tagLine": "The best card for shopping at BEST Denki"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_titanium-new.png",
+      "keywords": "miles,ocbc$,priority entry,booking,rewards,titanium",
+      "name": "OCBC Titanium Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/titanium-mastercard.html",
+      "tagLine": "The card that earns you up to 2 miles for every spend"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card-365.png",
+      "keywords": "weekend dining,online,groceries,fuel,rewards,rebate,365,allaround",
+      "name": "OCBC 365 Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/365card.html",
+      "tagLine": "The cashback card for all your daily spend"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_plus3.png",
+      "keywords": "rebate,plus,plus!,FairPrice,Unity,Popular,fuel,petrol,esso,caltex,ntuc,supermarket,groceries,NTUC,member",
+      "name": "OCBC NTUC Plus! Credit Card",
+      "productURL": "https://plus.com.sg/apply/cards/ntuc-plus-visa-credit-card",
+      "tagLine": "Best card to save on everything"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_plus2.png",
+      "keywords": "rebate,plus,plus!,FairPrice,Unity,Popular,fuel,petrol,esso,caltex,ntuc,supermarket,groceries,NTUC",
+      "name": "OCBC Plus! Credit Card",
+      "productURL": "https://plus.com.sg/apply/cards/plus-visa-credit-card",
+      "tagLine": "Best card to save on everything"
+    },
+    {
+      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card-365.png",
+      "keywords": "weekend dining,online,groceries,fuel,rewards,rebate,365,allaround",
+      "name": "OCBC 365 Credit Card",
+      "productURL": "https://www.ocbc.com/personal-banking/cards/365card.html",
+      "tagLine": "The cashback card for all your daily spend"
+    }
+  ]
+}));  
+   });
 
 
 
