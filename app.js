@@ -101,13 +101,6 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
       "tagLine": "The card that earns you up to 2 miles for every spend"
     },
     {
-      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card-365.png",
-      "keywords": "weekend dining,online,groceries,fuel,rewards,rebate,365,allaround",
-      "name": "OCBC 365 Credit Card",
-      "productURL": "https://www.ocbc.com/personal-banking/cards/365card.html",
-      "tagLine": "The cashback card for all your daily spend"
-    },
-    {
       "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card_plus3.png",
       "keywords": "rebate,plus,plus!,FairPrice,Unity,Popular,fuel,petrol,esso,caltex,ntuc,supermarket,groceries,NTUC,member",
       "name": "OCBC NTUC Plus! Credit Card",
@@ -120,13 +113,6 @@ app.get('/getPolicyDetails/:policyId',function(req,res){
       "name": "OCBC Plus! Credit Card",
       "productURL": "https://plus.com.sg/apply/cards/plus-visa-credit-card",
       "tagLine": "Best card to save on everything"
-    },
-    {
-      "imageURL": "https://www.ocbc.com/assets/images/uploads/Cards_Images/inside_compare/card-365.png",
-      "keywords": "weekend dining,online,groceries,fuel,rewards,rebate,365,allaround",
-      "name": "OCBC 365 Credit Card",
-      "productURL": "https://www.ocbc.com/personal-banking/cards/365card.html",
-      "tagLine": "The cashback card for all your daily spend"
     }
   ]
 }));  
